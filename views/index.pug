@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title BMI checker
+    link(rel="stylesheet", href="/styles.css")
+  body
+    .header
+      .wrapper
+        form(action="/calculate", method="post")
+          h1 BMI calculator
+          p Insert Your Age
+          input(type="text", name="age")
+          p Insert Weight in Kg
+          input(type="text", name="weight")
+          br
+          p Insert Height in cm
+          input(type="text", name="height")
+          br
+          button(type="submit") Check
+          p #{result}
